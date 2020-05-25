@@ -49,7 +49,6 @@ class NiTypes:
     def import_root_collision(n_node, b_obj):
         """ Import a RootCollisionNode """
         if isinstance(n_node, NifFormat.RootCollisionNode):
-            b_obj["type"] = "RootCollisionNode"
             b_obj.name = "RootCollisionNode"
             b_obj.display_type = 'BOUNDS'
             b_obj.show_wire = True
